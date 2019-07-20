@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <title>每时每刻 精品手表特卖电商网站 </title>
+    <style>
+      image {
+        display: block;
+        border: none;
+      }
+      em, i {
+        font-style: normal;
+      }
+      body, html{
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body onload="newtext()">
+    <noscript>
+      <strong>We're sorry but watch doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+  <script>
+    var text=document.title
+    var timerId
+    function newtext() {
+        clearTimeout(timerId)
+        document.title=text.substring(1,text.length)+text.substring(0,1)
+        text=document.title.substring(0,text.length)
+        timerId = setTimeout("newtext()", 800)
+    }
+  </script>
+</html>

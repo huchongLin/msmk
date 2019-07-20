@@ -1,0 +1,1 @@
+export const loginUrl = 'https://api.cat-shop.penkuoer.com'
